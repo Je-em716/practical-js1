@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Example</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <h1>Interactive Example</h1>
+    <h2>Section 1 Lessons</h2>
+    <!-- Toggle Button -->
+  <button onclick="toggleMenu()">Toggle Menu</button>
+
+  <!-- Navigation Menu (Hidden by default) -->
+  <div id="navMenu">
+ 
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="incrementCounter()">Increment Counter</button>
+    <button onclick="decrementCounter()">Decrement Counter</button>
+    <button onclick="resetCounter()">Reset</button>
+    
+    <p>Counter: <span id="counter">0</span></p>
+    <!-- Name Validation Form -->
+    <form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button type="submit">Greet me</button>
+    </form>
+    <p id="message"></p>
+    <button onclick="addParagraph()">Add Paragraph</button>
+    
+    <div id="additionalParagraphs"></div>
+
+       <script src="script.js"></script>
+     
+</body>
+</html>
